@@ -4,15 +4,124 @@
         <meta charset="utf-8">
         <meta name="viewport"
         content="width=device-width", initial-scale="1.0">
+        <script src="https://kit.fontawesome.com/b1a14029ea.js"></script>
+
+
         <title>UTVAC - About</title>
 
+        <link rel="stylesheet" href="/src/navbar.css">
         <link rel="stylesheet" href="about.css">
     </head>
 
     <body>
-        <h1>About</h1>
-        <p>Club description</p>
+        <!-- TODO: Add site header -->
 
-        <h2>Meet the Team</h2>
+        <div class="about__header">
+            <div class="title">
+                <h1>About</h1>
+            </div>
+            <ul class="links">
+                <li class="link">
+                    <a href="https://discord.gg/ThMhbPpMyU" target="_blank">
+                          <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                            <i class="fa-brands fa-discord fa-stack-1x"></i>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="link">
+                    <a href="https://www.instagram.com/uoft_vac/" target="_blank">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                            <i class="fa-brands fa-instagram fa-stack-1x"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="mailto:utvisualartclub@gmail.com" target="_blank">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                            <i class="fa-solid fa-envelope fa-stack-1x"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="https://www.facebook.com/uoftvac" target="_blank">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                            <i class="fa-brands fa-facebook-f fa-stack-1x"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="about__container">
+             <div class="about__section">
+                <h2>Our Goals</h2>
+                <p>Club description</p>
+             </div>
+
+             <div class="about__section">
+                <h2>Our Team</h2>
+
+                <div class="about__team">
+                    <div class="about__member">
+                        <div class="member__img">
+                            <img src="https://raw.githubusercontent.com/madelahn/madelahn.github.io/main/assets/rat.png">
+                        </div>
+                        <div class="member__body">
+                            <h3>Member 1</h3>
+                            <p>Member Description</p>
+                        </div>
+                    </div>
+
+                    <div class="about__member">
+                        <div class="member__img">
+                            <img src="https://raw.githubusercontent.com/madelahn/madelahn.github.io/main/assets/rat.png">
+                        </div>
+                        <div class="member__body">
+                            <h3>Member 2</h3>
+                            <p>Member Description</p>
+                        </div>
+                    </div>
+
+                    <div class="about__member">
+                        <div class="member__img">
+                            <img src="https://raw.githubusercontent.com/madelahn/madelahn.github.io/main/assets/rat.png">
+                        </div>
+                        <div class="member__body">
+                            <h3>Member 3</h3>
+                            <p>Member Description</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            
+        </div>
+
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__link" id="home">Home</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="pages/about.html" class="navbar__link" id="home">About</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="pages/schedule.html" class="navbar__link" id="home">Schedule</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="pages/faq.html" class="navbar__link" id="home">FAQ</a>
+                </li>
+            </ul>
+        </nav>
     </body>
 </html>
