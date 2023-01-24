@@ -4,12 +4,22 @@
         <meta charset="utf-8">
         <meta name="viewport"
         content="width=device-width", initial-scale="1.0">
+        
         <script src="https://kit.fontawesome.com/b1a14029ea.js"></script>
-
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+            $(function() {
+              $("#navbar").load("/src/navbar.html"); 
+            });
+        </script> 
 
         <title>UTVAC - About</title>
 
-        <link rel="stylesheet" href="/src/navbar.css">
+        <!-- <link rel="stylesheet" href="/src/navbar.css"> -->
         <link rel="stylesheet" href="about.css">
     </head>
 
@@ -97,31 +107,21 @@
                             <p>Member Description</p>
                         </div>
                     </div>
+
+                    <div class="about__member">
+                        <div class="member__img">
+                            <img src="https://raw.githubusercontent.com/madelahn/madelahn.github.io/main/assets/rat.png">
+                        </div>
+                        <div class="member__body">
+                            <h3>Member 4</h3>
+                            <p>Member Description</p>
+                        </div>
+                    </div>
                 </div>
              </div>
             
         </div>
 
-
-        <!-- Navbar -->
-        <nav class="navbar">
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__link" id="home">Home</a>
-                </li>
-
-                <li class="navbar__item">
-                    <a href="pages/about.html" class="navbar__link" id="home">About</a>
-                </li>
-
-                <li class="navbar__item">
-                    <a href="pages/schedule.html" class="navbar__link" id="home">Schedule</a>
-                </li>
-
-                <li class="navbar__item">
-                    <a href="pages/faq.html" class="navbar__link" id="home">FAQ</a>
-                </li>
-            </ul>
-        </nav>
+        <div id="navbar"></div>
     </body>
 </html>
