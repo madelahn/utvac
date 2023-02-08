@@ -12,6 +12,10 @@
     font-size: 48px;
 }
 
+
+/* 
+* PAGE HEADER FOR SOCIAL ICONS/LINKS
+*/
 .links {
     /* border-style: dashed; */
     display: grid;
@@ -38,6 +42,8 @@
 .icon-background {
     color: greenyellow;
 }
+/* ==================== */
+
 
 .about__container {
     margin: 4rem 12rem;
@@ -52,17 +58,49 @@
     margin-bottom: 24px;
 }
 
+/* ==================== */
+
+
+.president {
+    display: block;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.president__img img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.president__body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.president__body p {
+
+}
+
+
 .about__team {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.member__img {
+.member__img, .president__img {
     display: flex;
-    border: 1px;
-    border-style: dotted;
     align-items: center;
     justify-content: center;
+}
+
+.member__img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .about__member {
@@ -75,12 +113,22 @@
 
 }
 
-.member__body h3 {
-    font-size: 24px;
+.member__body h3, .president__body h3 {
+    font-size: 28px;
     margin: 0 0 24px 24px;
 }
 
-.member__body p {
+.member__body p, .president__body p {
     font-size: 20px;
-    margin: 0 0 24px 24px;
+    margin: 0px 0 24px 24px;
+}
+
+
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
 }

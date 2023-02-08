@@ -8,9 +8,10 @@
     display: flex;
     z-index: 999;
 
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    position: relative;
+    overflow: auto;
+    clear: both;
 
     justify-content: center;
     align-items: center;
