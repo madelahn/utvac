@@ -44,7 +44,6 @@
 }
 /* ==================== */
 
-
 .about__container {
     margin: 4rem 12rem;
 }
@@ -60,7 +59,6 @@
 
 /* ==================== */
 
-
 .president {
     display: block;
 
@@ -69,8 +67,8 @@
 }
 
 .president__img img {
-    width: 320px;
-    height: 320px;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
     object-position: 50% 50%;
 }
@@ -79,6 +77,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    margin-top: 24px;
 }
 
 .president__body p {
@@ -106,7 +106,7 @@
 .about__member {
     display: grid;
     grid-template-columns: 1fr 8fr;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .member__body {
