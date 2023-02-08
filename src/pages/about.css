@@ -1,3 +1,17 @@
+* h1, h2 {
+    font-family: 'Titan One';
+    font-weight: 500;
+}
+
+* p, h3 {
+    font-family: 'Nanum Pen Script';
+    font-weight: 500;
+}
+#banner {
+    margin: 4rem 12rem;
+
+}
+
 .about__header {
     margin: 4rem 12rem;
     display: grid;
@@ -5,11 +19,11 @@
 }
 
 .title {
-    /* border-style: dashed; */
+    color: orange;
 }
 
 .title h1 {
-    font-size: 48px;
+    font-size: 64px;
 }
 
 
@@ -17,17 +31,17 @@
 * PAGE HEADER FOR SOCIAL ICONS/LINKS
 */
 .links {
-    /* border-style: dashed; */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* border-style: dotted; */
+    grid-template-columns: 84px 84px 84px 84px;
     list-style: none;
-    padding: 0 240px;
+    justify-content: end;
 }
 
 .link {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 12px; 
+    margin-right: 0;
 }
 
 .link a {
@@ -49,12 +63,13 @@
 }
 
 .about__section {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .about__section h2 {
     font-size: 32px;
-    margin-bottom: 24px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 /* ==================== */
@@ -110,17 +125,19 @@
 }
 
 .member__body {
-
+    height: 200px;
 }
 
 .member__body h3, .president__body h3 {
-    font-size: 28px;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
     margin: 0 0 24px 24px;
 }
 
 .member__body p, .president__body p {
-    font-size: 20px;
-    margin: 0px 0 24px 24px;
+    font-size: 28px;
+    margin: 0px 12px 12px 24px;
 }
 
 
