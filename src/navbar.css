@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+.navbar {
+    background: pink;
+    height: 80px;
+    display: flex;
+    z-index: 999;
+
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    clear: both;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__menu {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+    margin: 0 auto;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__link {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+.navbar__link:hover {
+    color: red;
+    transition: all ease-out 0.2s;
+}

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+.banner {
+    background: pink;
+    height: 300px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner__container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.banner__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__img img {
+    width: 240px;
+    height: auto;
+}
