@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: 'Nanum Pen Script';
 }
 
 .navbar {
@@ -34,14 +35,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
 
     text-decoration: none;
-    font-size: 1.5rem;
-    padding: 0 2rem;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    padding: 0 4rem;
+
+    overflow: none;
 }
 
 .navbar__link:hover {
     color: red;
+    transform: scale(1.05);
     transition: all ease-out 0.2s;
 }
