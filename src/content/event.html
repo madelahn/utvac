@@ -4,13 +4,34 @@
     <title>Event</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div.subsection {
+        border-style: solid;
+      }
+      div.event-card {
+        outline-style: solid;
+        outline-width: 20px;
+        outline-color: #a4c293;
+        background-color: #edcc72;
+      }
+    </style>
   </head>
 
   <body>
     <div class="event-card">
-      <img src="" alt="" />
-      <div class="container">
-        <h2>Event</h2>
+      <div>
+        <img
+          src="src/assets/sample-image.jpg"
+          alt="Event Image"
+          style="width: 100%"
+        />
+        <div class="subsection">
+          <h3 class="green-outline"><b>Event 1</b></h3>
+          <p>Description of event 1</p>
+        </div>
       </div>
     </div>
   </body>
