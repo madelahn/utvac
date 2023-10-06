@@ -1,3 +1,14 @@
-.green-outline {
-  outline: 5px dotted green;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subsection {
+  border-style: solid;
+}
+
+.event-card {
+  outline-style: solid;
+  outline-width: 20px;
+  outline-color: #a4c293;
+  background-color: #edcc72;
 }
