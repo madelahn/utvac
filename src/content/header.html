@@ -33,13 +33,31 @@
   <body>
     <div>
       <div>
-        <img src="" alt="Banner" style="width: 100%" />
+        <div>
+          <img
+            src="../assets/vac-logo.png"
+            alt="Banner"
+            style="width: 10%; float: left"
+          />
+        </div>
+        <div>
+          <img
+            id="currentDisplay"
+            alt="Banner"
+            style="width: 90%"
+            src="../assets/sample-image.jpg"
+          />
+        </div>
       </div>
+
+      <button id="leftButton" onclick="navigateLeft()">Left</button>
+      <button id="rightButton" onclick="navigateRight()">Right</button>
+
       <div class="navbar">
-        <button type="button" id="navbar">Navbar</button>
+        <button id="navbar">Navbar</button>
         <div class="navbar-content">
-          <a href="#">Events</a>
-          <a href="#">Home</a>
+          <a href="events.html">Events</a>
+          <a href="home.html">Home</a>
         </div>
       </div>
     </div>
