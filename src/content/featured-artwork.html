@@ -2,48 +2,61 @@
 <html lang="en">
   <head>
     <title>Event</title>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="../scripts/featured_artwork.js"></script>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
-      }
-      div.gallery {
-        margin: 5px;
-        border: 1px solid #ccc;
-        width: 1000px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        display: flex;
-      }
-
-      div.desc {
-        padding: 15px;
-        text-align: center;
-        border: 1px solid #ccc;
-        width: auto;
-      }
-    </style>
+    <link href="../../dist/output.css" rel="stylesheet" />
   </head>
+
   <body>
-    <div>
-      <div>
-        <div class="gallery">
-          <img
-            id="currentDisplay"
-            alt="Banner"
-            style="width: 40%"
-            src="../assets/sample-image-1.jpg"
-          />
-          <div class="desc">Description</div>
-        </div>
+    <div class="artwork-card">
+      <div class>
+        <img
+          id="currentDisplay"
+          alt="Artwork"
+          class="rounded-t-lg object-cover h-48 w-96"
+          src="../assets/sample-image-1.jpg"
+        />
       </div>
-      <button id="leftButton" onclick="navigateLeft()">Left</button>
-      <button id="rightButton" onclick="navigateRight()">Right</button>
+      <div class="p-5">
+        <h5 class="artwork-title">Title</h5>
+        <p class="artwork-artist">Artist</p>
+      </div>
+      <div class="flex items-center justify-center">
+        <button id="leftButton" onclick="navigateLeft()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 8l-4 4 4 4M16 12H9" />
+          </svg>
+        </button>
+
+        <button id="rightButton" onclick="navigateRight()" class="items-end">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 8l4 4-4 4M8 12h7" />
+          </svg>
+        </button>
+      </div>
     </div>
   </body>
 </html>
