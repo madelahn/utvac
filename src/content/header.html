@@ -5,60 +5,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="../scripts/header.js"></script>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .navbar {
-        float: left;
-        overflow: hidden;
-      }
-
-      .navbar-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-      }
-
-      .navbar:hover .navbar-content {
-        display: block;
-      }
-    </style>
+    <link href="../../dist/output.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <div>
-      <div>
-        <div>
-          <img
-            src="../assets/vac-logo.png"
-            alt="Banner"
-            style="width: 10%; float: left"
-          />
-        </div>
-        <div>
-          <img
-            id="currentDisplay"
-            alt="Banner"
-            style="width: 50%"
-            src="../assets/sample-image-1.jpg"
-          />
-        </div>
-      </div>
-
-      <button id="leftButton" onclick="navigateLeft()">Left</button>
-      <button id="rightButton" onclick="navigateRight()">Right</button>
-
-      <div class="navbar">
-        <button id="navbar">Navbar</button>
-        <div class="navbar-content">
-          <a href="events.html">Events</a>
-        </div>
+  <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+    <div
+      class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+    >
+      <a href="../../src/content/home.html" class="flex items-center">
+        <img
+          src="../../src/assets/vac-logo.png"
+          class="mr-3 h-6 sm:h-9"
+          alt="VAC Logo"
+        />
+        <span
+          class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+          >Visual Arts Club</span
+        >
+      </a>
+      <div
+        class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+        id="mobile-menu-2"
+      >
+        <ul
+          class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+        >
+          <li>
+            <a
+              href="../../src/content/home.html"
+              class="page-link"
+              aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../src/content/events.html"
+              class="page-link"
+              aria-current="page"
+              >Events</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../src/content/featured-artwork.html"
+              class="page-link"
+              aria-current="page"
+              >Featured Artwork</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
-  </body>
+  </nav>
 </html>
