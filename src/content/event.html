@@ -4,28 +4,110 @@
     <title>Event</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../style/event.css" />
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-    </style>
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <script src="../scripts/events.js"></script>
   </head>
 
-  <body>
-    <div class="">
-      <div>
-        <img
-          src="../assets/sample-image-1.jpg"
-          alt="Event Image"
-          style="width: 50%"
-        />
-        <div class="">
-          <h3 class=""><b>Event</b></h3>
-          <h5>Date of event</h5>
-          <p>Description of event</p>
+  <!--Header-->
+  <div class="super-div">
+    <nav
+      class="bg-white border-gray-200 dark:bg-gray-800 lg:px-6 px-4 py-2.5 h-3/5 w-4/5 mt-10 rounded-lg bg-cover"
+      style="background-image: url('../assets/sample-image-1.jpg')"
+    >
+      <div
+        class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+      >
+        <a href="../../src/content/home.html" class="flex items-center">
+          <img
+            src="../../src/assets/vac-logo.png"
+            class="mr-3 h-6 sm:h-9"
+            alt="VAC Logo"
+          />
+          <span
+            class="self-center text-xl text-white font-semibold whitespace-nowrap dark:text-white"
+            >Visual Arts Club</span
+          >
+        </a>
+        <div
+          class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+          id="mobile-menu-2"
+        >
+          <ul
+            class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+          >
+            <li>
+              <a
+                href="../../src/content/home.html"
+                class="page-link"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../src/content/events.html"
+                class="page-link"
+                aria-current="page"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a href="" class="page-link" aria-current="page"
+                >Featured Artwork</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+  </div>
+
+  <!--Gallery-->
+  <div class="grid grid-rows-2 gap-4 place-items-center w-full">
+    <div class="h-3/5 w-4/5">
+      <img
+        id="selected-image"
+        class="rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg"
+        alt=""
+      />
     </div>
-  </body>
+    <div class="grid grid-cols-5 gap-4 w-4/5 h-2/5" id="mini-images">
+      <div>
+        <img
+          class="mini-image"
+          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="mini-image"
+          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="mini-image"
+          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="mini-image"
+          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="mini-image"
+          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
 </html>
