@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 div.artwork-card {
-  @apply max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700;
+  @apply max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-dark_primary-700 dark:border-dark_tertiary-600;
 }
 
 h5.artwork-title {
-  @apply mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white;
+  @apply mb-2 text-2xl font-bold tracking-tight text-light_secondary-900 dark:text-dark_secondary;
 }
 
 p.artwork-artist {
@@ -27,9 +27,25 @@ a.page-link {
 }
 
 div.super-div {
-  @apply flex flex-col items-center justify-center h-screen relative;
+  @apply flex flex-col items-center justify-center min-h-screen w-screen relative dark:bg-dark_primary-800;
 }
 
 img.mini-image {
-  @apply h-auto max-w-full rounded-lg;
+  @apply object-cover h-40 w-auto rounded-lg;
+}
+
+div.event-card {
+  @apply w-4/5 max-h-full bg-white border border-gray-200 rounded-lg dark:bg-dark_primary-700 dark:border-dark_tertiary-600;
+}
+
+h1.section-header {
+  @apply mt-4 mb-2 text-3xl font-bold tracking-tight text-light_secondary-900 dark:text-dark_secondary;
+}
+
+div.navbar {
+  @apply bg-white border-gray-200 dark:bg-gray-800 px-4 py-2.5 h-3/5 w-4/5 mt-10 rounded-lg bg-cover;
+}
+
+hr.divider {
+  @apply mt-4 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50;
 }
