@@ -9,7 +9,7 @@ images = [
 
 function navigateRight() {
   if (i >= images.length - 1) {
-    alert("You're all the way at the right already.");
+    i = 0;
   } else {
     i++;
     document.getElementById("currentDisplay").src = `../assets/${images[i]}`;
@@ -18,7 +18,7 @@ function navigateRight() {
 
 function navigateLeft() {
   if (i <= 0) {
-    alert("You're all the way at the left already.");
+    i = images.length;
   } else {
     i--;
     document.getElementById("currentDisplay").src = `../assets/${images[i]}`;
