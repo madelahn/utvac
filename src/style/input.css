@@ -18,8 +18,8 @@ button.button {
   @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
 }
 
-div.banner-image {
-  background-image: "../assets/sample-image-1.jpg";
+nav.banner-image {
+  background-image: "url('../assets/sample-image-1.jpg')";
 }
 
 a.page-link {
@@ -27,7 +27,9 @@ a.page-link {
 }
 
 div.super-div {
-  @apply flex flex-col items-center justify-center min-h-screen w-screen relative dark:bg-dark_primary-800;
+  @apply flex flex-col items-center justify-center w-screen relative dark:bg-dark_primary-800 z-10;
+  height: auto;
+  min-height: 100vh;
 }
 
 img.mini-image {
@@ -42,10 +44,14 @@ h1.section-header {
   @apply mt-4 mb-2 text-3xl font-bold tracking-tight text-light_secondary-900 dark:text-dark_secondary;
 }
 
-div.navbar {
-  @apply bg-white border-gray-200 dark:bg-gray-800 px-4 py-2.5 h-3/5 w-4/5 mt-10 rounded-lg bg-cover;
+nav.navbar {
+  @apply bg-white border-gray-200 dark:bg-gray-800 px-4 py-2.5 h-3/5 w-4/5 mt-20 rounded-lg bg-cover;
 }
 
 hr.divider {
   @apply mt-4 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50;
+}
+
+img.paint-splotch {
+  @apply -z-10 h-32;
 }

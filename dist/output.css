@@ -546,6 +546,30 @@ video {
   border-width: 0;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.left-24 {
+  left: 6rem;
+}
+
+.left-44 {
+  left: 11rem;
+}
+
+.right-24 {
+  right: 6rem;
+}
+
+.right-28 {
+  right: 7rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -568,8 +592,16 @@ video {
   margin-right: 1.25rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-4 {
@@ -860,8 +892,8 @@ button.button:focus {
   }
 }
 
-div.banner-image {
-  background-image: "../assets/sample-image-1.jpg";
+nav.banner-image {
+  background-image: "url('../assets/sample-image-1.jpg')";
 }
 
 a.page-link {
@@ -889,8 +921,8 @@ a.page-link:hover {
 
 div.super-div {
   position: relative;
+  z-index: 10;
   display: flex;
-  min-height: 100vh;
   width: 100vw;
   flex-direction: column;
   align-items: center;
@@ -902,6 +934,11 @@ div.super-div {
     --tw-bg-opacity: 1;
     background-color: rgb(30 41 59 / var(--tw-bg-opacity));
   }
+}
+
+div.super-div {
+  height: auto;
+  min-height: 100vh;
 }
 
 img.mini-image {
@@ -950,8 +987,8 @@ h1.section-header {
   }
 }
 
-div.navbar {
-  margin-top: 2.5rem;
+nav.navbar {
+  margin-top: 5rem;
   height: 60%;
   width: 80%;
   border-radius: 0.5rem;
@@ -967,7 +1004,7 @@ div.navbar {
 }
 
 @media (prefers-color-scheme: dark) {
-  div.navbar {
+  nav.navbar {
     --tw-bg-opacity: 1;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
   }
@@ -986,6 +1023,18 @@ hr.divider {
   hr.divider {
     opacity: 0.5;
   }
+}
+
+img.paint-splotch {
+  z-index: -10;
+  height: 8rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-dark_primary-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  }
 
   .dark\:bg-dark_tertiary-700 {
     --tw-bg-opacity: 1;
@@ -995,11 +1044,6 @@ hr.divider {
   .dark\:bg-gray-800 {
     --tw-bg-opacity: 1;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-  }
-
-  .dark\:bg-dark_primary-700 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(51 65 85 / var(--tw-bg-opacity));
   }
 
   .dark\:text-white {
