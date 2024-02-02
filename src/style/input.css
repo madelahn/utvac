@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 div.artwork-card {
-  @apply max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-dark_primary-700 dark:border-dark_tertiary-600;
+  @apply max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-dark_secondary dark:border-dark_tertiary;
 }
 
 h5.artwork-title {
-  @apply mb-2 text-2xl font-bold tracking-tight text-light_secondary-900 dark:text-dark_secondary;
+  @apply mb-2 text-2xl font-bold tracking-tight text-light_secondary-900 dark:text-dark_quinary;
 }
 
 p.artwork-artist {
-  @apply mb-3 font-normal text-gray-700 dark:text-gray-400;
+  @apply mb-3 font-normal text-gray-700 dark:text-dark_quinary;
 }
 
 button.button {
-  @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+  @apply text-white bg-blue-700 hover:bg-blue-800 rounded-full p-2.5 me-2 dark:bg-dark_tertiary dark:hover:bg-dark_tertiary;
 }
 
 nav.banner-image {
@@ -27,7 +27,7 @@ a.page-link {
 }
 
 div.super-div {
-  @apply flex flex-col items-center justify-center w-screen relative dark:bg-dark_primary-800 z-10;
+  @apply flex flex-col items-center justify-center w-screen relative dark:bg-dark_primary z-10;
   height: auto;
   min-height: 100vh;
 }
@@ -37,11 +37,11 @@ img.mini-image {
 }
 
 div.event-card {
-  @apply w-4/5 max-h-full bg-white border border-gray-200 rounded-lg dark:bg-dark_primary-700 dark:border-dark_tertiary-600;
+  @apply w-4/5 max-h-full bg-white border border-gray-200 rounded-lg dark:bg-dark_secondary dark:border-dark_tertiary;
 }
 
 h1.section-header {
-  @apply mt-4 mb-2 text-3xl font-bold tracking-tight text-light_secondary-900 dark:text-dark_secondary;
+  @apply mt-4 mb-2 text-3xl font-bold tracking-tight text-light_secondary-900 dark:text-dark_quinary;
 }
 
 nav.navbar {
@@ -49,9 +49,10 @@ nav.navbar {
 }
 
 hr.divider {
-  @apply mt-4 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50;
+  @apply mt-4 h-0.5 border-t-0 bg-dark_quinary opacity-100 dark:opacity-50;
 }
 
 img.paint-splotch {
   @apply -z-10 h-32;
+  color: black;
 }

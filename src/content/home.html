@@ -10,8 +10,8 @@
 
   <div class="super-div">
     <nav
-      class="bg-white border-gray-200 dark:bg-gray-800 px-4 py-2.5 h-3/5 w-4/5 mt-10 rounded-lg bg-cover" 
-      style="background-image: url('../assets/sample-image-1.jpg');"
+      class="bg-white border-gray-200 dark:bg-gray-800 px-4 py-2.5 h-3/5 w-4/5 mt-10 rounded-lg bg-cover"
+      style="background-image: url('../assets/sample-image-1.jpg')"
     >
       <div
         class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
@@ -51,10 +51,7 @@
               >
             </li>
             <li>
-              <a
-                href=""
-                class="page-link"
-                aria-current="page"
+              <a href="" class="page-link" aria-current="page"
                 >Featured Artwork</a
               >
             </li>
@@ -65,7 +62,9 @@
 
     <div class="flex items-center justify-center w-full">
       <!--About Us-->
-      <div class="bg-white border border-gray-200 dark:bg-dark_primary-700 w-3/5 h-full mt-10 mr-5">
+      <div
+        class="bg-white border border-gray-200 dark:bg-dark_primary-700 w-3/5 h-full mt-10 mr-5"
+      >
         About us
       </div>
       <!--Featured artworks-->
@@ -84,27 +83,61 @@
         </div>
         <div class="flex items-center justify-center">
           <button id="leftButton" onclick="navigateLeft()" class="button mb-5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H6M12 5l-7 7 7 7"/></svg>
-              <circle cx="12" cy="12" r="10" />
-              <path d="M12 8l-4 4 4 4M16 12H9" />
-            </svg>
-          </button>
-  
-          <button id="rightButton" class="button mb-5" onclick="navigateRight()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="-0.5 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
-                stroke="currentColor"
+                d="M12 22.4199C17.5228 22.4199 22 17.9428 22 12.4199C22 6.89707 17.5228 2.41992 12 2.41992C6.47715 2.41992 2 6.89707 2 12.4199C2 17.9428 6.47715 22.4199 12 22.4199Z"
+                stroke="#000000"
+                stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+              <path
+                d="M13.4102 16.4199L10.3502 13.55C10.1944 13.4059 10.0702 13.2311 9.98526 13.0366C9.9003 12.8422 9.85645 12.6321 9.85645 12.4199C9.85645 12.2077 9.9003 11.9979 9.98526 11.8035C10.0702 11.609 10.1944 11.4342 10.3502 11.29L13.4102 8.41992"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               />
             </svg>
-            <span class="sr-only">Icon description</span>
+          </button>
+
+          <button
+            id="rightButton"
+            class="button mb-5"
+            onclick="navigateRight()"
+          >
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="-0.5 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 22.4199C17.5228 22.4199 22 17.9428 22 12.4199C22 6.89707 17.5228 2.41992 12 2.41992C6.47715 2.41992 2 6.89707 2 12.4199C2 17.9428 6.47715 22.4199 12 22.4199Z"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.5596 8.41992L13.6196 11.29C13.778 11.4326 13.9047 11.6068 13.9914 11.8015C14.0781 11.9962 14.123 12.2068 14.123 12.4199C14.123 12.633 14.0781 12.8439 13.9914 13.0386C13.9047 13.2332 13.778 13.4075 13.6196 13.55L10.5596 16.4199"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
         </div>
       </div>
     </div>
   </div>
-
 </html>
